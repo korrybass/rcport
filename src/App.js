@@ -65,8 +65,9 @@ loop();
   render() {
     return (
       <div className="App" ref="site-wrapper">
-        <div className="smooth" ref="smooth">
           <Header />
+        
+        <div className="smooth" ref="smooth">
           <Hero />
           <Body />
         </div>
