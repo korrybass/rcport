@@ -8,26 +8,22 @@ import Body from './components/Body/Body.js'
 
 class App extends Component {
 
+  constructor(){
+    super();
+    this.state = {
+      windowHeight: ""
+    }
+  }
+
   initScroll(){
     var lastPosition = -100;
-    console.log(this);
     let smoothElem = this.refs['smooth'];
-    let wrapper = this.refs['wrapper']
-// $(document).ready(function() {
-//     $('.wrapper').height($('.smooth').height());
+    let wrapper = this.refs['site-wrapper']
 
-//     $(window).resize(function() {
-//         $('.wrapper').height($('.smooth').height());
-//     });
-
-//     $('.flat-button').click(function() {
-//         $(".smooth").clearQueue().css({
-//             transform: 'translate3d(0px, -' + $('.toggle').offset().top + 'px, 0px)'
-//         });
-//         $(window).scrollTop($('.toggle').offset().top);
-//         return false;
-//     });
-// });
+    this.windowHeight = smoothElem.clientHeight
+    window.addEventListener("resize", () => {
+      this.setState({ windowHeight:  this.windowHeight})
+    });
 
 var scroll = window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
@@ -42,18 +38,17 @@ var scroll = window.requestAnimationFrame ||
 function loop() {
 
     // Avoid calculations if not needed
-    if (lastPosition == window.pageYOffset) {
+    if (lastPosition === window.pageYOffset) {
         scroll(loop);
         return false;
     } else lastPosition = window.pageYOffset;
   
     var transform = 'translate3d(0px, -' + lastPosition + 'px, 0px)';
-    // var smoothScoll = $(".smooth")[0];
-  
-    // smoothScoll.style.webkitTransform = transform;
-    // smoothScoll.style.mozTransform = transform;
-    // smoothScoll.style.transform = transform;
-  
+    var smoothScoll = smoothElem;
+    
+    smoothScoll.style.webkitTransform = transform;
+    smoothScoll.style.mozTransform = transform;
+    smoothScoll.style.transform = transform;
     scroll(loop)
 }
 
@@ -64,6 +59,7 @@ loop();
 
   componentDidMount(){
     this.initScroll();
+    this.setState({ windowHeight:  this.windowHeight})
   }
 
   render() {
@@ -71,8 +67,8 @@ loop();
       <div className="App" ref="site-wrapper">
         <div className="smooth" ref="smooth">
           <Header />
-          <Body />
           <Hero />
+          <Body />
         </div>
       </div>
     );
