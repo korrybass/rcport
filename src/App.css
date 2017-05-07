@@ -1,10 +1,11 @@
 body{
-    background: #27A6AA;
+    /*background: #27A6AA;*/
   
 }
 .smooth {
     color: white;
-    top: 0;
+    top: 57px;
+    position: relative;
     right: 0;
     left: 0;
     transition: all .5s cubic-bezier(0.2, .84, .5, 1);
