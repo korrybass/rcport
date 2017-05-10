@@ -45,10 +45,13 @@
     "whatwg-fetch": "2.0.2"
   },
   "dependencies": {
+    "history": "^4.6.1",
     "jquery": "^3.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-parallax": "^1.4.0"
+    "react-parallax": "^1.4.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "scripts": {
     "start": "node scripts/start.js",

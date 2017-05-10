@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './components/Header/Header.js'
-import Hero from './components/Hero/Hero.js'
-import Body from './components/Body/Body.js'
-
-
+import Work from './components/Work/Work.js';
+import Resume from './components/Resume/Resume.js';
+import Home from './components/Home/Home.js';
+// import { Router, Route, hashHistory } from 'react-router';
 
 class App extends Component {
 
@@ -65,11 +64,9 @@ loop();
   render() {
     return (
       <div className="App" ref="site-wrapper">
-          <Header />
         
         <div className="smooth" ref="smooth">
-          <Hero />
-          <Body />
+         
         </div>
       </div>
     );
