@@ -25,9 +25,22 @@ body {
 .bold{
   font-weight: 700;
 }
+.regular{
+  font-weight: 400;  
+}
+
+h1,h2,h3,h4{
+  font-family: 'Playfair Display', serif;
+}
+h5, h6, p{
+  font-family: 'Lato', sans-serif;
+}
 
 ul{
   list-style: none;
   margin: 0;
+}
+.view-wrapper{
+  /*margin-top:68px;*/
 }
 
