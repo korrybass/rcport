@@ -1,0 +1,47 @@
+.work-container{
+  .title{
+    color: #c25034;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 900;
+  }
+  ul.workList{
+    text-align: center;
+    padding: 0;
+    .spacer{
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin: 0 15px;
+      line-height: 2px;
+    }
+    li{
+      color: #c25034;      
+      font-weight: 900;      
+      font-family: 'Lato', serif;
+      display: inline-block;
+    }
+  }
+  .work-grid{
+    display: flex;
+    flex-direction: row;
+    a{
+      display: block;
+    }
+    .half{
+      flex-basis: 50%;
+    }
+    .quarter{
+      flex-basis: 25%;
+    }
+    .full{
+      flex-basis: 100%;
+    }
+    .ducreux{
+      background-image: url('../../assets/img/ducreux.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
