@@ -13,9 +13,11 @@ class Hero extends Component {
         {/*<Parallax className="hero-parallax" bgImage={bg} strength={300}>*/}
             <div className="hero-content">
               <div className="intro">
-                <h4>Korry Bass</h4>
-                <h3>Front End</h3>
-                <h3>Web Developer</h3>                
+                <div className="intro-content">
+                  <h4>Korry Bass</h4>
+                  <h3>Front End</h3>
+                  <h3>Web Developer</h3> 
+                </div>
               </div>
               {/*<img className="triangle" alt="" src={triangle}/>
               <div className="hero-tag">

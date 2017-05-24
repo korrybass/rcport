@@ -3,6 +3,15 @@
     "title": "DucreuxJS",
     "subtitle": "Simple Frontend Utility Framework",
     "link": "http://penheadcreative.com/ducreux/",
-    "github": "https://github.com/Penhead/DucreuxJs"
+    "github": "https://github.com/Penhead/DucreuxJs",
+    "type": "Software",
+    "content": {
+      "images": [],
+      "text": "Simple Frontend Utility Framework.<br/> This framework was created to help with normal frontend tasks such as validation, simple elem querying, custom directives, element height equalizer, videoBox (only for self hosted videos and youtube videos), simple UI masking, geolocation. Still in very experimental state will be streamlined and new features added soon.",
+      "links": {
+        "demo": "",
+        "github": "" 
+      }
+    }
   }
 ]
