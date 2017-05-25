@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
-import bg from '../../assets/img/bg/building4-2.jpg';
+// import { Parallax } from 'react-parallax';
+// import bg from '../../assets/img/bg/building4-2.jpg';
 // import triangle from '../../assets/img/triangle.svg';
 // import ph from '../../assets/img/penhead-walk2.png';
 

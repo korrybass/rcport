@@ -39,7 +39,6 @@
     "sass-loader": "^6.0.3",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "^1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
@@ -51,7 +50,10 @@
     "react-dom": "^15.5.4",
     "react-parallax": "^1.4.0",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "react-slick": "^0.14.11",
+    "slick-carousel": "^1.6.0",
+    "webpack": "^1.15.0"
   },
   "scripts": {
     "start": "node scripts/start.js",

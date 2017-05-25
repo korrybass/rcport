@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Hero from '../Hero/Hero.js'
-import Body from '../Body/Body.js'
+// import Body from '../Body/Body.js'
 
 import './home.scss';
 
