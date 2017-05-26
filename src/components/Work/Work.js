@@ -93,7 +93,6 @@ class Work extends Component {
             <div className="project-arrows">
               <span className={ showLeftArr } onClick={this.prevProject}> &#8592; </span>
               <span className={ showRightArr }  onClick={this.nextProject}> &#8594; </span>
-              
             </div>
           </div>
           <div className="last">
@@ -108,7 +107,7 @@ class Work extends Component {
               </p>
             </div>
             <div className="links">
-              {this.generateLink(projects[this.state.currentProject].content.links)}
+              { this.generateLink(projects[this.state.currentProject].content.links) }
             </div>
           </div>
         </div>
